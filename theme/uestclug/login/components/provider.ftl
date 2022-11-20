@@ -64,6 +64,10 @@
           <div class="h-6 w-6">
             <@iconProvider[provider.alias] />
           </div>
+        <#elseif provider.alias == "uestclug-ms">
+          <div class="h-6 w-6">
+            <@iconProvider["microsoft"] />
+          </div>
         <#else>
           ${provider.displayName!}
         </#if>
