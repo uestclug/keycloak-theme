@@ -31,3 +31,7 @@
     @apply mr-2;
   }
 }
+
+header .text-2xl img {
+  display: inline;
+}
