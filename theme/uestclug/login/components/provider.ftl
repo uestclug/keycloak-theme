@@ -26,6 +26,9 @@
         <#case "linkedin">
           <#assign color="hover:bg-provider-linkedin/10">
           <#break>
+        <#case "uestclug-ms">
+          <#assign color="hover:bg-provider-microsoft/10">
+          <#break>
         <#case "microsoft">
           <#assign color="hover:bg-provider-microsoft/10">
           <#break>
