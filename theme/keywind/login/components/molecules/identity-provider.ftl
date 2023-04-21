@@ -31,6 +31,9 @@
         <#case "linkedin">
           <#assign colorClass="hover:bg-provider-linkedin/10">
           <#break>
+        <#case "uestclug-ms">
+          <#assign colorClass="hover:bg-provider-microsoft/10">
+          <#break>
         <#case "microsoft">
           <#assign colorClass="hover:bg-provider-microsoft/10">
           <#break>
@@ -68,6 +71,10 @@
         <#if providerIcons[provider.alias]??>
           <div class="h-6 w-6">
             <@providerIcons[provider.alias] />
+          </div>
+        <#elseif provider.alias == "uestclug-ms">
+          <div class="h-6 w-6">
+            <@providerIcons["microsoft"] />
           </div>
         <#else>
           ${provider.displayName!}
