@@ -5,7 +5,7 @@
   <div class="relative" x-data="{ open: false }">
     <@link.kw @click="open = true" color="secondary" component="button" type="button">
       <div class="flex items-center">
-        <span class="mr-1 text-sm">${currentLocale}</span>
+        <span class="mr-1 text-sm" style="flex: none;">${currentLocale}</span>
         <@icon.kw />
       </div>
     </@link.kw>
@@ -14,6 +14,7 @@
       class="absolute bg-white bottom-0 -left-4 max-h-80 mb-6 overflow-y-scroll rounded-lg shadow-lg"
       x-cloak
       x-show="open"
+      style="width: max-content;"
     >
       <#list locales as locale>
         <#if currentLocale != locale.label>
