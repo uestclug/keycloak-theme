@@ -1,4 +1,4 @@
-import Alpine from 'alpinejs';
+//import Alpine from 'alpinejs';
 import { base64url } from 'rfc4648';
 
 type DataType = {
@@ -35,6 +35,7 @@ type StoreType = {
 };
 
 document.addEventListener('alpine:init', () => {
+  // @ts-ignore
   Alpine.data('webAuthnRegister', function (this: DataType) {
     const {
       attestationObjectInput,
